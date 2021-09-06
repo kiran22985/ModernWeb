@@ -1,0 +1,11 @@
+.success_message{
+background:#4DB6AC;
+color:#fff;
+border-radius:5px;
+}
+
+.error_message{
+background:red;
+color:#fff;
+border-radius:5px;
+}

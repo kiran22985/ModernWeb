@@ -1,0 +1,453 @@
+{% extends 'base.html' %}
+{%load static%}
+{%block title%}
+<title>Home Page</title>
+{% endblock %}
+{% block main_content %}
+<style>
+  .carousel-caption{
+  padding-bottom:300px;
+  padding-right:300px;
+  }
+  #Facility{
+  width:400px;
+  font-family: 'Quicksand', sans-serif;
+  margin:50px 50px;
+  display:inline-block;
+  }
+  #hovercard{
+  width:850px;
+  padding:50px;
+  margin:30px 50px;
+
+  display:inline-block;
+  }
+  .card-body{
+  height:130px;
+
+  }
+  .inner{
+  overflow:hidden;
+  }
+  .inner img{
+  transition:all 1.5s ease;
+  }
+  .inner:hover img{
+  transform:scale(1.5);
+  }
+  #work{
+  height: 850px;
+
+  }
+  .card-body h3{
+  color:white;
+  }
+  p{
+   font-family: 'Quicksand', sans-serif;
+  }
+  #why{
+
+    font-family: 'Quicksand', sans-serif;
+    margin-top:60px;
+  }
+  .card{
+  border:none;
+  }
+
+  #ownerimage{
+  margin-left:200px;
+  display:inline-block;
+  font-size:20px;
+  }
+
+  #seekerimage{
+  margin-left:500px;
+  display:inline-block;
+  font-size:20px;
+  }
+</style>
+<div class="container-fluid">
+  <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+    </ul>
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item  active">
+        <img src="{%static 'image/carousel1.jpg'%}" alt="room" class="img-fluid">
+        <div class="carousel-caption">
+          <h3 class="text-warning">Welcome to FindHouse.com</h3>
+          <h4>Find Buyer, Owner or Tenant at Nepal's Largest Property Portal</h4>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{%static 'image/room.jpg'%}" alt="house picture" class="img-fluid">
+      </div>
+      <div class="carousel-item">
+        <img src="{%static 'image/carousel2.jpg'%}" alt="aparttment" class="img-fluid">
+      </div>
+      <div class="carousel-item">
+        <img src="{%static 'image/apartment.jpg'%}" alt="office" class="img-fluid">
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  <div id="Facility">
+    <h2>FindHouse Facilitates</h2>
+    <p class= "text-dark">Find Buyer, Owner or Tenant at Nepal's Largest Property Portal
+    .Tenant directly find Building, Flat, Room, House & Commercial Space for Rent / Sale</p>
+  </div>
+  <div id="hovercard">
+    <div class="card-deck">
+      <div class="card shadow">
+        <div class="inner">
+          <img class="card-img-top" src="{%static 'image/facility1.PNG'%}" alt="Card image">
+        </div>
+        <div class="card-body text-center bg-success text-white">
+          <p class="card-text">Give us your</p>
+          <a href="#" style="text-decoration:none" class="text-warning">Requirement</a>
+        </div>
+      </div>
+      <div class="card shadow">
+        <div class="inner">
+          <img class="card-img-top" src="{%static 'image/facility2.PNG'%}" alt="Card image">
+        </div>
+        <div class="card-body text-center bg-success text-white">
+          <p class="card-text">We will help you to meet</p>
+          <a href="#" style="text-decoration:none" class="text-warning">Owners and seekrs</a>
+        </div>
+      </div>
+      <div class="card shadow">
+        <div class="inner">
+          <img class="card-img-top" src="{%static 'image/facility3.PNG'%}" alt="Card image">
+        </div>
+        <div class="card-body text-center bg-success text-white">
+          <p class="card-text">Enjoy with your </p>
+          <a href="#" style="text-decoration:none" class="text-warning">New Owner and tenant</a>
+        </div>
+      </div>
+      <div class="card shadow">
+        <div class="inner">
+          <img class="card-img-top" src="{%static 'image/facility4.PNG'%}" alt="Card image">
+        </div>
+        <div class="card-body text-center bg-success text-white">
+          <p class="card-text">Find your properties buyer</p>
+          <a href="#" style="text-decoration:none" class="text-warning">sale your properties</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="work" class="bg-secondary">
+    <h3 class="text-warning text-center">How FindHouse Works</h3>
+    <p class="text-center text-warning">For Building/Flat/Room Seeker</p>
+    <p class="text-white text-center">Building / Flat / Room Hunting Simplifield</p>
+    <div class="container">
+      <div class="card-deck">
+        <div class="card bg-secondary">
+          <img src="{%static 'image/search.PNG'%}" alt="card image" class="card-img-top">
+          <div class="card-body text-center">
+            <h3 class="text-white">Search</h3>
+            <p class="card-text text-warning">Find a place that fits all your preferences.</p>
+          </div>
+        </div>
+        <div class="card bg-secondary">
+          <img src="{%static 'image/work2.PNG'%}" alt="card image" class="card-img-top" styel="height:100px">
+          <div class="card-body text-center">
+            <h3 class="text-white">Book</h3>
+            <p class="card-text text-warning">Pay a token amount to lock the Room / House.</p>
+          </div>
+        </div>
+        <div class="card bg-secondary">
+          <img src="{%static 'image/work3.PNG'%}" alt="card image" class="card-img-top">
+          <div class="card-body text-center">
+            <h3 class="text-white">Field visit</h3>
+            <p class="card-text text-warning">Finalise a time and date to visit the home you like.</p>
+          </div>
+        </div>
+        <div class="card bg-secondary">
+          <img src="{%static 'image/work4.PNG'%}" alt="card image" class="card-img-top">
+          <div class="card-body text-center">
+            <h3 class="text-white">Move in</h3>
+            <p class="card-text text-warning">Choose a move-in date and just show up!</p>
+          </div>
+        </div>
+      </div>
+      <h3 class="text-warning text-center pt-4">For property owners</h3>
+      <p class="text-center text-white">Building / Flat / Land Sale or Rent Simplifield</p>
+      <div class="card-deck">
+        <div class="card bg-secondary">
+          <img src="{%static 'image/work5.PNG'%}" alt="card image" class="card-img-top">
+          <div class="card-body text-center">
+            <h3 class="text-white">Need a Tenant</h3>
+            <p class="card-text text-warning">Nepal's leading Property Portal allows you to advertise your Building,Rooms,Flats,House and Apartments.</p>
+          </div>
+        </div>
+        <div class="card bg-secondary">
+          <img src="{%static 'image/work6.PNG'%}" alt="card image" class="card-img-top">
+          <div class="card-body text-center">
+            <h3 class="text-white">Set a free Profile</h3>
+            <p class="card-text text-warning">Setup a profile and list your property making it visible to property seeker.</p>
+          </div>
+        </div>
+        <div class="card bg-secondary">
+          <img src="{%static 'image/work7.PNG'%}" alt="card image" class="card-img-top">
+          <div class="card-body text-center">
+            <h3 class="text-white">Advertise your room</h3>
+            <p class="card-text text-warning">Advertise your House or Room to Thousands of potential tenants.</p>
+          </div>
+        </div>
+        <div class="card bg-secondary">
+          <img src="{%static 'image/work8.PNG'%}" alt="card image" class="card-img-top">
+          <div class="card-body text-center">
+            <h3 class="text-white">Welcome new tenant</h3>
+            <p class="card-text text-warning">Providing your new tenants with a simple, but thoughtful, welcome package helps set the tone for the future.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="why">
+    <h3 class="text-center">Why FindHouse</h3>
+    <p class="text-center">Get a complete update on Rental and Sale of Property</p>
+    <div class="container">
+      <div class="card-deck">
+        <div class="card">
+          <div class="card-body text-center">
+            <h3 class="text-warning">Easily Listings</h3>
+            <p class="card-text text-dark">Comprehensive listing for affordable rental places in your locality
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <h3 class="text-warning">Complete Analysis
+            </h3>
+            <p class="card-text text-dark">Get the must detailed analysis on the latest trends in the rental sphere.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <h3 class="text-warning">Customer Support</h3>
+            <p class="card-text text-dark">Dedicated support line to help you find the right rental accommodation.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <h3 class="text-warning">Happy Customers
+            </h3>
+            <p class="card-text text-dark">Happy Customers who found a new home for rent using Gharbheti.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="card" style="margin-top:100px">
+  <img class="card-img-top" src="{%static 'image/handshake.jpg'%}" alt="Card image" style="height:600px;opacity:0.8">
+  <div class="card-img-overlay">
+    <h3 class="text-center text-warning">Benefit to Property Owner and Seeker</h3>
+    <h2 class="text-dark text-center">Renting Solutions</h2>
+    <p class="text-dark text-center">Directly Seeker Connect to Owner and Find your Flats, Room, Apartments, Land for Rent and sale.</p>
+    <div id="ownerimage">
+    <img src="{%static 'image/owner1.png'%}" alt="">
+    <h3 class="text-white">OWNER</h3>
+      <ul class="text-white bg-dark">
+        <li> Easy Rental Listings</li>
+        <li>Broker Free</li>
+        <li>Personal Assistance</li>
+        <li>Hasle Free</li>
+      </ul>
+    </div>
+
+    <div id="seekerimage">
+    <img src="{%static 'image/seeker.png'%}" alt="">
+      <h3 class="text-white">SEEKER</h3>
+      <ul class="text-white bg-dark">
+        <li> Verified Rentals</li>
+        <li>No Brokerage</li>
+        <li>Personal Assistance</li>
+        <li>Hasle Free</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <!-- Footer -->
+<footer class="bg-dark text-center text-white" style="margin-top:20px;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        FindHouse.com is a dynamic website where seekers can connect directly with the house owner and find their flats, rooms,
+        apartments, land for rent. A seeker can find a place that fits all their preferences, pay a token amount to lock the room/house, and
+        finalise a time and date to visit the home they like. There will be easy for both owner and seeker.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase"><u>FindHouse</u></h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">About US</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">FAQ</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Blog</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Send us a message</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase"><u>Quick links</u></h5>
+
+          <ul class=" list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Pre booking</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Properties for Rent</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Properties for sale</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Popular Property For Rent</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase"><u>Related link</u></h5>
+
+          <ul class=" list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">General properties</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">premium properties</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">properties in Kathmandu</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Hot deal Properties</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3 bg-success" style="font-size:20px;">
+    <p class="text-dark">© 2020 Copyright:<a class="text-dark"href="#">FindHouse.com</a></p>
+
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</div>
+{% endblock %}

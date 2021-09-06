@@ -1,0 +1,42 @@
+{%extends 'base.html'%}
+{%load static %}
+
+{% block main_content%}
+<style>
+    .container{
+    padding-top:100px;
+    border:2px solid blue;
+    }
+
+    .badge{
+    width:300px;
+    }
+
+    #owner{
+    margin-left:100px; margin-top:50px
+    }
+</style>
+<div class="container text-center bg-secondary mt-4">
+
+    <p class="h4">Create your Account Here</p>
+    <p class="h5 text-warning">Please choose an option</p>
+
+
+            <div class="badge badge-pill badge-success">
+                <img src="{%static 'image/teamwork.png'%}" alt="Seeker image">
+                <p class="h4">Seeker</p>
+                <a href="/register" class="btn btn-danger">Create Account</a>
+
+            </div>
+
+            <div class="badge badge-pill badge-info" id="owner">
+                <img src="{%static 'image/owner.png'%}" alt="Seeker image">
+                <p class="h4">Owner/Post Property</p>
+                <a href="/registerowner" class="btn btn-danger">Create Account</a>
+            </div>
+
+
+
+
+</div>
+{% endblock %}

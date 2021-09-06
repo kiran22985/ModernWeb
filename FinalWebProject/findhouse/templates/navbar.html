@@ -1,0 +1,46 @@
+{%load static%}
+<nav class="navbar navbar-expand-md  bg-warning navbar-light sticky-top">
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapse_target">
+    <a href="#" class="nav-brand"><img src="{%static 'image/house.png'%}" alt="findhouse.com"><span class="navbar-text">
+        Findhouse.com</span></a>
+
+    <ul class="navbar-nav">
+        <li class="nav-item"><a href="findhouse.com/index" class="nav-link h5">Home</a></li>
+
+        <li class="nav-item dropdown"><a href="#" class="nav-link h5 dropdown-toggle" data-toggle="dropdown">For Rent
+        <div class="dropdown-menu bg-light dropdown-menu-right">
+            <a href="room" class="dropdown-item">Room</a>
+            <a href="flat" class="dropdown-item">Flat</a>
+            <a href="#" class="dropdown-item">Apartment</a>
+            <a href="#" class="dropdown-item">Building</a>
+            <a href="#" class="dropdown-item">Space</a>
+            <a href="#" class="dropdown-item">Hostel</a>
+        </div>
+        </a></li>
+        <li class="nav-item dropdown"><a href="#" class="nav-link h5 dropdown-toggle" data-toggle="dropdown">For Sale
+        <div class="dropdown-menu bg-info dropdown-menu-right">
+            <a href="" class="dropdown-item">Building</a>
+            <a href="" class="dropdown-item">Land</a>
+        </div>
+        </a></li>
+        <li class="nav-item"><a href="contactus" class="nav-link h5">Contact Us</a></li>
+        {%if user.is_authenticated%}
+        <li class="nav-item"><a href="#" class="nav-link h5">list property</a></li>
+        <li class="nav-item"><a href="/logout" class="nav-link btn btn-danger text-white">Logout</a></li>
+        <li class="nav-item">
+                <a class="nav-link" href="/profile"><img src="{%static 'image/profile789.png'%}" alt=""></a>
+        </li>
+        <li class="nav-item"><a href="/findhouse.com/password_change" class="nav-link btn btn-secondary text-white">
+            Change password</a></li>
+        {%else%}
+        <li class="nav-item"><a href="/login" class="nav-link btn btn-info text-white" style="width:130px">Login</a></li>
+        <li class="nav-item"><a href="registeropt" class="nav-link btn btn-success text-white" style="width:130px">
+            Register</a></li>
+
+        {%endif%}
+    </ul>
+    </div>
+</nav>

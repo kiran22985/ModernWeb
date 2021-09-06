@@ -1,0 +1,173 @@
+{%extends 'base.html'%}
+{%load static %}
+
+{% block main_content%}
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Quicksand', sans-serif;
+    color:#fff;
+
+
+    }
+    .contact{
+    color:#fff;
+    postion:relative;
+    min-height:100vh;
+    padding:50px 100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background-size:cover;
+    background-image:url({%static 'image/back.jpg'%})
+    }
+    .contact .content{
+    max-width:800px;
+    text-align:center;
+    color:#fff;
+    }
+
+    .contact .content h2{
+    font-size:36px;
+    font-weight:500;
+    color:#000000
+    color:#fff;
+
+    }
+
+    .contact .content p{
+    color:#fff;
+    font-weight:300;
+    color:#000000;
+
+    }
+    .container1{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:30px;
+
+    }
+
+    .container1 .contactInfo{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+
+    }
+
+    .container1 .contactInfo .box{
+    position:relative;
+    display:flex;
+    padding:20px 0px;
+
+    }
+
+    .container1 .contactInfo .box .icon{
+     min-width:60px;
+     height:60px;
+     display:felx;
+     justify-content:center;
+     align-items:center;
+     border-radius:50%;
+     font-size:22px;
+    }
+
+    .container1 .contactInfo .box .icon .text{
+    display:flex;
+    margin-left:20px;
+    font-size:16px;
+    flex-direction:column;
+    font-weight:300;
+
+    }
+    .contactform{
+    width:70%;
+    padding:40px;
+    background:gray;
+    color:yellow;
+
+    }
+
+    .contactform .inputbox{
+    position:relative;
+    width:100%;
+    margin-top:10px;
+    }
+
+    .contactform .inputbox input{
+    margin:10px 0
+    font-size:16px;
+    padding:5px 0;
+    width:100%;
+    color:black;
+
+
+    }
+</style>
+<div class="contact">
+    <div class="content">
+        <h2>Contact Us</h2>
+        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur excepturi modi officia qui sequi sunt. Corporis quos, tempore. Accusantium fuga ipsa ipsam maxime mollitia obcaecati porro, quis repellat temporibus vel!</p>
+        <div class="container1">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p class="text-warning">Softwarica College of IT and E-commerce<br>Dillibazar, Kathmandu</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text" >
+                        <h3>Email</h3>
+                        <p class="text-warning">Anushkagiri2298@gmail.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text" style="margin-left:75px">
+                        <h3>Phone</h3>
+                        <p class="text-warning">9808420246</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactform text-dark">
+                <form action="">
+                    <h2>Send Message</h2>
+                    <div class="inputbox">
+                        <span>Full Name</span>
+                        <input type="text" required="required">
+
+                    </div>
+
+                    <div class="inputbox">
+                        <span>Email</span>
+                        <input type="text" required="required">
+
+                    </div>
+
+                    <div class="inputbox">
+                        <span>Type your message.....</span>
+                        <textarea required="required" style="width:250px; height:100px" class="text-dark"></textarea>
+
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="submit" value="send" class="btn btn-warning">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+{% endblock %}

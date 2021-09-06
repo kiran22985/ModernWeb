@@ -1,0 +1,245 @@
+{%extends 'base.html'%} {%load static %} {% block main_content%}
+<style>
+    .card {
+        border: none;
+        box-shadow: 5px 10px 5px grey;
+    }
+    
+    .card-body {
+        color: green;
+        text-align: center;
+    }
+    
+    .card-body p {
+        color: black;
+    }
+</style>
+<div class="container pt-4">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card-deck">
+                <div class="card">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{%static 'image/kitchen.jpg'%}" alt="Los Angeles" style="width:550px;height:350px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{%static 'image/bedroom.jpg'%}" alt="Chicago" style="width:550px; height:350px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{%static 'image/hall.jpg'%}" alt="Chicago" style="width:550px; height:350px">
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Room - RR504 Kalanki</h5>
+                        <p>a 2 rooms for rent at kalanki, kathmandu with the....</p>
+                        <a href="view_detail" class="card-link btn btn-success">View details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="demo1" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo1" data-slide-to="1"></li>
+                            <li data-target="#demo1" data-slide-to="2"></li>
+                        </ul>
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{%static 'image/kitchen1.jpg'%}" alt="Los Angeles" style="width:550px;height:350px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{%static 'image/bedroom1.jpg'%}" alt="Chicago" style="width:550px; height:350px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{%static 'image/hall1.jpg'%}" alt="Chicago" style="width:550px; height:350px">
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo1" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Room - RR447 Jamal</h5>
+                        <p>3 room for rent which is located at jamal, kathma....</p>
+                        <a href="#" class="card-link btn btn-success">View details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="demo2" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo2" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo2" data-slide-to="1"></li>
+                            <li data-target="#demo2" data-slide-to="2"></li>
+                        </ul>
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{%static 'image/home1.jpg'%}" alt="Los Angeles" style="width:550px;height:350px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{%static 'image/kitchen2.jpg'%}" alt="Chicago" style="width:550px; height:350px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{%static 'image/hall2.jpg'%}" alt="Chicago" style="width:550px; height:350px">
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo2" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Room - RR500 Mulpani</h5>
+                        <p>A beautiful flat for rent at Mulpani,kathmandu wi.....</p>
+                        <a href="#" class="card-link btn btn-success">View details</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="row pt-4">
+        <div class="col-md-12">
+            <div class="card-deck">
+                <div class="card">
+                    <div id="demo3" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo3" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo3" data-slide-to="1"></li>
+                            <li data-target="#demo3" data-slide-to="2"></li>
+                        </ul>
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{%static 'image/kitchen3.jpg'%}" alt="Los Angeles" style="width:550px;height:350px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{%static 'image/home2.jpg'%}" alt="Chicago" style="width:550px; height:350px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{%static 'image/hall3.jpg'%}" alt="Chicago" style="width:550px; height:350px">
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo3" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo3" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Room - RR458 HAttiban</h5>
+                        <p>1 single big room located in hattiban</p>
+                        <a href="#" class="card-link btn btn-success">View details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="demo4" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo4" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo4" data-slide-to="1"></li>
+                            <li data-target="#demo4" data-slide-to="2"></li>
+                        </ul>
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{%static 'image/home3.jpg'%}" alt="Los Angeles" style="width:550px;height:350px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{%static 'image/hall4.jfif'%}" alt="Chicago" style="width:550px; height:350px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{%static 'image/hall1.jpg'%}" alt="Chicago" style="width:550px; height:350px">
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo4" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo4" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Room - RR452 Koteshwor</h5>
+                        <p>A 5 rooms flat in rent at kotheshwor,Kathmandu wi........</p>
+                        <a href="#" class="card-link btn btn-success">View details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="demo5" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo5" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo5" data-slide-to="1"></li>
+                            <li data-target="#demo5" data-slide-to="2"></li>
+                        </ul>
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{%static 'image/home4.webp'%}" alt="Los Angeles" style="width:550px;height:350px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{%static 'image/bedroom1.jpg'%}" alt="Chicago" style="width:550px; height:350px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{%static 'image/hall1.jpg'%}" alt="Chicago" style="width:550px; height:350px">
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo5" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo5" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Room - RR490 Dhapakhel</h5>
+                        <p>2 rooms for rent at dhapakhel,lalitpur with the f........</p>
+                        <a href="#" class="card-link btn btn-success">View details</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="samar">
+        <p>hello samar</p>
+    </div>
+</div>
+{%endblock%}
